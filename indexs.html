@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Desk</title>
+  </head>
+  <body>
+    <header>
+      <h1>⌂ Campus Desk</h1>
+      <p>Student Management System</p>
+      <link rel="stylesheet" href="indexs.css" />
+    </header>
+    <hr />
+
+    <nav >
+      <a href="#home">Home</a> | <a href="#course">Course</a> |
+      <a href="#registration">Registration</a> |
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <hr />
+
+    <main>
+      <section id="home">
+        <h2>Welcome to Campus Desk</h2>
+        <p>Manage student information easily.</p>
+
+        <img
+          src="image/photo_2026-10-29_19-31-47.jpg"
+          alt="Campus Image"
+          width="300"
+        />
+
+        <p>We are learning Web Development.</p>
+        <p>We love coding and technology.</p>
+      </section>
+      <hr />
+
+      <section id="course">
+        <h2>Our Courses</h2>
+        <ul>
+          <li>Information System</li>
+          <li>Computer Science</li>
+          <li>Computer Engineering</li>
+          <li>Information Technology</li>
+        </ul>
+      </section>
+      <hr />
+
+      <section id="tables">
+        <h2>Our Tables</h2>
+
+        <table border="1" cellpadding="10">
+          <tr>
+            <th>Name</th>
+            <th>ID Number</th>
+          </tr>
+          <tr>
+            <td>Fuad</td>
+            <td>0278/17</td>
+          </tr>
+          <tr>
+            <td>Faysel</td>
+            <td>4567/17</td>
+          </tr>
+        </table>
+      </section>
+      <hr />
+
+      <section id="registration">
+        <h1>Welcome to Campus Desk Form</h1>
+        <p>Please complete the form below.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+            <br /><br />
+
+            <label>Date of Birth:</label>
+            <input
+              type="date"
+              name="dob"
+              placeholder="Enter your date of birth"
+              required
+            />
+            <br /><br />
+
+            <label>Gender:</label>
+            <select name="gender" required>
+              <option value="">Select your gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <br /><br />
+
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <br /><br />
+
+            <label>Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+            <br /><br />
+
+            <label>Address:</label>
+            <textarea
+              name="address"
+              rows="3"
+              placeholder="Enter your address"
+              required
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Academic Information</legend>
+
+            <label>Student Type:</label><br />
+            <input type="radio" name="type" value="Regular" required />
+            Regular
+
+            <input type="radio" name="type" value="Extension" />
+            Extension
+            <br /><br />
+
+            <label>Select Courses:</label><br />
+            <input type="checkbox" name="courses[]" value="Java" /> Java<br />
+            <input type="checkbox" name="courses[]" value="C++" /> C++<br />
+            <input type="checkbox" name="courses[]" value="HTML" /> HTML<br />
+            <input type="checkbox" name="courses[]" value="Python" />
+            Python<br />
+            <input type="checkbox" name="courses[]" value="Database" /> Database
+            <br /><br />
+
+            <label>University:</label>
+            <input
+              type="text"
+              name="university"
+              placeholder="Enter university name"
+              required
+            />
+            <br /><br />
+
+            <label>College / Institute:</label>
+            <input
+              type="text"
+              name="college"
+              placeholder="Enter college or institute"
+              required
+            />
+            <br /><br />
+
+            <label>Department:</label>
+            <input
+              type="text"
+              name="department"
+              placeholder="Enter your department"
+              required
+            />
+            <br /><br />
+            <label>Student ID:</label>
+            <input
+              type="text"
+              name="student_id"
+              placeholder="Enter your student ID"
+              required
+            />
+            <br /><br />
+
+            <label>Year of Study:</label>
+            <select name="year" required>
+              <option value="">Select your year of study</option>
+              <option>First Year</option>
+              <option>Second Year</option>
+              <option>Third Year</option>
+              <option>Fourth Year</option>
+              <option>Fifth Year</option>
+            </select>
+          </fieldset>
+
+          <br />
+
+          <input type="checkbox" name="confirm" value="yes" required />
+          I confirm the information is correct.
+
+          <br /><br />
+
+          <button type="submit">Register</button>
+          <button type="reset">Clear Form</button>
+        </form>
+      </section>
+      <hr />
+
+      <section id="campus-media">
+        <h2>Campus Video and Audio</h2>
+
+        <h3>Video</h3>
+        <video width="300" height="250" controls>
+          <source src="video/video_2026-11-04_17-55-53.mp4" type="video/mp4" />
+        </video>
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source
+            src="audio/music_for_videos-ethiopia-234149.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support audio.
+        </audio>
+      </section>
+      <hr />
+
+      <section id="contacts">
+        <h2>Contact Us</h2>
+        <a href="mailto:example@gmail.com">example@gmail.com</a>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>&copy; 2026 Campus Desk. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

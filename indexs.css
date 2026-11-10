@@ -1,0 +1,13 @@
+.conav{
+    background-color:white;
+    color:yellow;
+    gap:10px;
+    padding:10px;
+    margin:10px;
+}
+#course{
+    color:rgb(128, 0, 0);
+    card{
+        background-color:rgb(225, 192, 25);
+    }
+}
